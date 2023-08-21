@@ -134,7 +134,7 @@ p {
   line-height: normal;
 }
 .div {
-  /* height: 200px; */
+  height: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
   display: flex;
@@ -165,7 +165,7 @@ p {
   transition: background 0.2s linear;
   align-items: center;
   width: 428px;
-  /* height: 100vh; */
+  height: fit-content;
 }
 
 .mainDiv.dark {
@@ -276,6 +276,7 @@ p {
   border: 1px solid var(--line-colour, #d7d8db);
   background: var(--secondary-colour-white, #fff);
   padding-left: 20px;
+  padding-right: 20px !important;
   outline: none;
   color: var(--grey-text, #888);
   font-family: Lexend;
@@ -284,7 +285,33 @@ p {
   font-weight: 400;
   line-height: normal;
 }
+.inputsss {
+  width: 120px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid var(--line-colour, #d7d8db00);
+  background: var(--secondary-colour-white, #fff);
 
+  outline: none;
+  color: var(--text, #2e2e2e);
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form-control {
+  border: 1px solid var(--line-colour, #d7d8db) !important;
+  outline: #d7d8db !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0) !important;
+}
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--line-colour, #d7d8db);
+  outline: #d7d8db !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0) !important;
+}
 .borderForAll {
   border-radius: 6px;
   border: 1.7px solid var(--line-colour, #d7d8db);
@@ -385,6 +412,10 @@ p {
 }
 .forInput {
   color: #b1b4bd;
+  font-size: 18px !important;
+}
+.ixcons {
+  font-size: 18px !important;
 }
 .optionsTab {
   margin-top: 50px;
@@ -1050,6 +1081,8 @@ table {
 }
 .flatpickr-day.today {
   border-color: #f36c2c !important;
+  background-color: #f36c2c !important;
+  color: white !important;
 }
 select {
   word-wrap: normal;
@@ -1334,15 +1367,49 @@ select {
   width: 100%;
   color: #5acc7f;
   font-family: Lexend;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  text-align: center;
 }
-
+.completed {
+  color: #5acc7f;
+  /* body text 14pt R */
+  width: fit-content;
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  padding: 4px 11px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 3px;
+  background: rgba(90, 204, 127, 0.2);
+}
+.failed {
+  color: #f36c2c;
+  /* body text 14pt R */
+  width: fit-content;
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  padding: 4px 11px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 3px;
+  background: rgba(243, 108, 44, 0.1);
+}
 .addedToCart {
   background-color: your-color;
   /* Add other styles as needed */
@@ -1925,6 +1992,7 @@ select {
   border-radius: 5px;
   background: rgba(90, 204, 127, 0.28);
   border: none;
+  cursor: auto !important;
 }
 .book-hist2 {
   color: #fd6161;
@@ -1941,6 +2009,7 @@ select {
   border-radius: 5px;
   background: rgba(253, 97, 97, 0.1);
   border: none;
+  cursor: auto !important;
 }
 .productss {
   /* height: 188px; */
