@@ -2054,6 +2054,15 @@ select {
   margin-bottom: 20px;
   margin-top: 30px;
 }
+.statuserror {
+  color: var(--staus-colour-error, #fd6161);
+  /* sub heading 14pt R */
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 @media screen and (max-width: 768px) {
   .borderr {
     border-right: 1px solid #2e2e2e00;
